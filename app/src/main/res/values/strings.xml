@@ -33,4 +33,9 @@
     <string name="maximum">Maximum</string>
     <string name="mean">Mean</string>
     <string name="minimum">Minimum</string>
+    <string name="exit_dialog_summary">Are you sure want to exit?</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="delete_dialog_summary">Are you sure want to delete this entry?</string>
+    <string name="delete">Delete</string>
 </resources>
