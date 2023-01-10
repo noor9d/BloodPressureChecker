@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/insightFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_insights"
+        android:title="@string/insight"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/scanFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_fingerprint"
+        android:title="@string/scan"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/moreFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_more"
+        android:title="@string/more"/>
+</menu>
