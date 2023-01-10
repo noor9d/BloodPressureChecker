@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"
+    android:background="@color/purple_200"
     tools:context=".ui.fragments.HomeFragment">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/textView"
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="16dp"
@@ -42,6 +42,100 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/btnDate"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSystolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/systolic"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/divider"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDate" />
+
+            <TextView
+                android:id="@+id/tvDiastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/diastolic"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/divider"
+                app:layout_constraintTop_toBottomOf="@+id/btnTime" />
+
+            <TextView
+                android:id="@+id/tvPulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/pulse"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/divider2"
+                app:layout_constraintTop_toBottomOf="@+id/btnTime" />
+
+            <NumberPicker
+                android:id="@+id/numberPickerSystolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/btnSave"
+                app:layout_constraintEnd_toStartOf="@+id/divider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSystolic" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1dp"
+                android:layout_height="200dp"
+                android:background="@color/purple_200"
+                app:layout_constraintBottom_toTopOf="@id/btnSave"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDiastolic"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <NumberPicker
+                android:id="@+id/numberPickerDiastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/btnSave"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintStart_toEndOf="@+id/divider"
+                app:layout_constraintTop_toBottomOf="@+id/tvDiastolic" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="200dp"
+                android:background="@color/purple_200"
+                app:layout_constraintBottom_toTopOf="@id/btnSave"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/divider"
+                app:layout_constraintTop_toBottomOf="@id/tvDiastolic"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <NumberPicker
+                android:id="@+id/numberPickerPulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/btnSave"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider2"
+                app:layout_constraintTop_toBottomOf="@+id/tvPulse" />
 
             <Button
                 android:id="@+id/btnSave"
