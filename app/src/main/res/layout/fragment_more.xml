@@ -11,8 +11,8 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="16dp"
         android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,16 +44,164 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvSettings">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/tvProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="@string/profile"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_profile"
+                        app:drawableTint="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+
+                    <TextView
+                        android:id="@+id/tvReminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="@string/reminders"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_reminder"
+                        app:drawableTint="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+
+                    <TextView
+                        android:id="@+id/tvReset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="@string/reset_recorded_data"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_delete"
+                        app:drawableTint="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+
+                    <TextView
+                        android:id="@+id/tvRateUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="@string/rate_us"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_heart"
+                        app:drawableTint="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+
+                    <TextView
+                        android:id="@+id/tvMoreApps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="@string/more_apps"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_more"
+                        app:drawableTint="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+
+                    <TextView
+                        android:id="@+id/tvShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="@string/share_with_friends"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_share"
+                        app:drawableTint="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+
+                    <TextView
+                        android:id="@+id/tvHelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:padding="16dp"
+                        android:text="@string/help"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_help"
+                        app:drawableTint="@color/grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+
+                    <LinearLayout
+                        android:id="@+id/tvVibration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/vibration"
+                            android:textSize="16sp"
+                            android:drawablePadding="16dp"
+                            app:drawableStartCompat="@drawable/ic_vibration"
+                            app:drawableTint="@color/grey" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchVibration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".7dp"
+                        android:background="#CFCFCF" />
+                </LinearLayout>
             </androidx.core.widget.NestedScrollView>
-
-            <!--<View
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/purple_200"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="214dp" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

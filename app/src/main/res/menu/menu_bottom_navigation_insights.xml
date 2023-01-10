@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/recordsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_records"
+        app:showAsAction="ifRoom"
+        android:title="@string/records" />
+    <item
+        android:id="@+id/trendsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_trend"
+        android:title="@string/trends"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/statisticsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_stats"
+        android:title="@string/statistics"
+        app:showAsAction="ifRoom"/>
+</menu>

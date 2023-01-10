@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_insights"
+    app:startDestination="@id/recordsFragment">
+
+    <fragment
+        android:id="@+id/recordsFragment"
+        android:name="com.example.bloodpressurechecker.ui.fragments.insights.RecordsFragment"
+        android:label="fragment_records"
+        tools:layout="@layout/fragment_records" />
+    <fragment
+        android:id="@+id/trendsFragment"
+        android:name="com.example.bloodpressurechecker.ui.fragments.insights.TrendsFragment"
+        android:label="fragment_trends"
+        tools:layout="@layout/fragment_trends" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.bloodpressurechecker.ui.fragments.insights.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+</navigation>
