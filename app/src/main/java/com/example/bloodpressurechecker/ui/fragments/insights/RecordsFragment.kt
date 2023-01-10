@@ -1,16 +1,15 @@
-package com.example.bloodpressurechecker.ui.fragments
+package com.example.bloodpressurechecker.ui.fragments.insights
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.bloodpressurechecker.R
-import com.example.bloodpressurechecker.databinding.FragmentHomeBinding
 import com.example.bloodpressurechecker.databinding.FragmentInsightBinding
+import com.example.bloodpressurechecker.databinding.FragmentRecordsBinding
 
-class InsightFragment : Fragment() {
-    private var _binding: FragmentInsightBinding? = null
+class RecordsFragment : Fragment() {
+    private var _binding: FragmentRecordsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,7 +17,7 @@ class InsightFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentInsightBinding.inflate(inflater, container, false)
+        _binding = FragmentRecordsBinding.inflate(inflater, container, false)
         return binding.root
     }
 

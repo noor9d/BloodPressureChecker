@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/insightFragment"
-        android:name="com.example.bloodpressurechecker.ui.fragments.InsightFragment"
+        android:name="com.example.bloodpressurechecker.ui.fragments.insights.InsightFragment"
         android:label="Insight"
         tools:layout="@layout/fragment_insight" />
     <fragment
