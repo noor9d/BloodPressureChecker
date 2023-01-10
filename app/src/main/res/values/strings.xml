@@ -26,4 +26,11 @@
     <string name="press_and_hold_to_delete_record">Press and hold to delete record</string>
     <string name="past_record_trends">Past Record Trends</string>
     <string name="double_tap_or_pinch_to_zoom">Double Tap or Pinch to Zoom</string>
+    <string name="total_readings">Total Readings:</string>
+    <string name="metrics">Metrics</string>
+    <string name="best">Best</string>
+    <string name="worst">Worst</string>
+    <string name="maximum">Maximum</string>
+    <string name="mean">Mean</string>
+    <string name="minimum">Minimum</string>
 </resources>
