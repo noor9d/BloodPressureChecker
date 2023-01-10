@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.bloodpressurechecker.HomeFragment"
+        android:name="com.example.bloodpressurechecker.view.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/insightFragment"
-        android:name="com.example.bloodpressurechecker.InsightFragment"
+        android:name="com.example.bloodpressurechecker.view.InsightFragment"
         android:label="Insight"
         tools:layout="@layout/fragment_insight" />
     <fragment
         android:id="@+id/scanFragment"
-        android:name="com.example.bloodpressurechecker.ScanFragment"
+        android:name="com.example.bloodpressurechecker.view.ScanFragment"
         android:label="Scan"
         tools:layout="@layout/fragment_scan" />
     <fragment
         android:id="@+id/moreFragment"
-        android:name="com.example.bloodpressurechecker.MoreFragment"
+        android:name="com.example.bloodpressurechecker.view.MoreFragment"
         android:label="More"
         tools:layout="@layout/fragment_more" />
 </navigation>

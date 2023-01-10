@@ -1,4 +1,4 @@
-package com.example.bloodpressurechecker
+package com.example.bloodpressurechecker.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,11 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.bloodpressurechecker.R
 import com.example.bloodpressurechecker.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
