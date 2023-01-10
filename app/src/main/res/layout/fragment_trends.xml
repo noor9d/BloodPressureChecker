@@ -3,18 +3,98 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
     tools:context="com.example.bloodpressurechecker.ui.fragments.insights.TrendsFragment">
 
     <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/past_record_trends"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/purple_200"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/tvDiastolic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <TextView
+        android:id="@+id/tvSystolic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/trends"
+        android:layout_margin="16dp"
+        android:text="@string/systolic"
+        android:textSize="16sp"
+        android:drawablePadding="6dp"
+        app:drawableStartCompat="@drawable/ic_chart"
+        app:drawableTint="#03A9F4"
+        app:layout_constraintBottom_toTopOf="@+id/tvNote"
+        app:layout_constraintEnd_toStartOf="@+id/tvDiastolic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvDiastolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/diastolic"
+        android:textSize="16sp"
+        android:drawablePadding="6dp"
+        app:drawableStartCompat="@drawable/ic_chart"
+        app:drawableTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSystolic"
+        app:layout_constraintEnd_toStartOf="@+id/tvPulse"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvSystolic"
+        app:layout_constraintTop_toTopOf="@+id/tvSystolic"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvPulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/pulse"
+        android:textSize="16sp"
+        android:drawablePadding="6dp"
+        app:drawableStartCompat="@drawable/ic_chart"
+        app:drawableTint="#F44336"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDiastolic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDiastolic"
+        app:layout_constraintTop_toTopOf="@+id/tvDiastolic"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/double_tap_or_pinch_to_zoom"
+        android:textSize="16sp"
+        android:drawablePadding="6dp"
+        app:drawableStartCompat="@drawable/ic_info"
+        app:drawableTint="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
