@@ -38,4 +38,6 @@
     <string name="exit">Exit</string>
     <string name="delete_dialog_summary">Are you sure want to delete this entry?</string>
     <string name="delete">Delete</string>
+    <string name="download_sensor">Download Sensor</string>
+    <string name="ad">Ad</string>
 </resources>
