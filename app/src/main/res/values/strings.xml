@@ -23,4 +23,5 @@
     <string name="records">Records</string>
     <string name="trends">Trends</string>
     <string name="statistics">Statistics</string>
+    <string name="press_and_hold_to_delete_record">Press and hold to delete record</string>
 </resources>
