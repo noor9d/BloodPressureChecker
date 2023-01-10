@@ -1,4 +1,4 @@
-package com.example.bloodpressurechecker
+package com.example.bloodpressurechecker.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.bloodpressurechecker.R
 import com.example.bloodpressurechecker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
