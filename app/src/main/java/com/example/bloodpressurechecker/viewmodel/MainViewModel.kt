@@ -32,35 +32,41 @@ class MainViewModel @Inject constructor(private val repository: TrackerRepositor
             repository.insertBloodPressure(data)
         }
     }
-//
-//    fun readHistory() {
-//        viewModelScope.launch(Dispatchers.IO) {
-//            _history.postValue(repository.getHistory())
-//        }
-//    }
-//
-//    fun readCurrentInfo() {
-//        viewModelScope.launch(Dispatchers.IO) {
-//            _currentInfo.postValue(repository.getCurrentInfo())
-//        }
-//    }
-//
+
+    fun readRecord() {
+        viewModelScope.launch(Dispatchers.IO) {
+            _bloodInfo.postValue(repository.getRecord())
+        }
+    }
+
 //    fun refreshCurrentWeather(){
 //        viewModelScope.launch(Dispatchers.IO) {
 //            repository.getCurrentWeather()
 //        }
 //    }
-//
-//    fun deleteLocation(id:Int) {
-//        viewModelScope.launch(Dispatchers.IO) {
-//            val number=repository.deleteHistory(id)
-//        }.invokeOnCompletion {
-//            viewModelScope.launch(Dispatchers.IO){
+
+    fun deleteLocation(id:Int) {
+        viewModelScope.launch(Dispatchers.IO) {
+            val number=repository.deleteHistory(id)
+        }.invokeOnCompletion {
+            viewModelScope.launch(Dispatchers.IO){
 //                readHistory()
 //                refreshCurrentWeather()
-//            }
-//        }
-//    }
+            }
+        }
+    }
+
+
+    fun resetRecord() {
+        viewModelScope.launch(Dispatchers.IO) {
+            val number=repository.reset()
+        }.invokeOnCompletion {
+            viewModelScope.launch(Dispatchers.IO){
+//                readHistory()
+//                refreshCurrentWeather()
+            }
+        }
+    }
 
 }
 

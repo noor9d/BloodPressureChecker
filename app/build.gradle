@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -15,11 +17,21 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-
+        setProperty"archivesBaseName", "Blood Pressure Checker-" + versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug{
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "AppID", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "InterstitialID", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "NativeID", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "OpenAdID", "ca-app-pub-3940256099942544/3419835294"
+            resValue "string", "keyRemote", "ad_config_debug"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -44,6 +56,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
 
     // navigation component
     def navigation_version = "2.5.3"
@@ -65,4 +78,17 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
+
+    //MpChart
+    implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
+
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
+    implementation 'com.google.firebase:firebase-config-ktx:21.2.0'
+    implementation 'com.google.code.gson:gson:2.10'
+
+
+
 }
