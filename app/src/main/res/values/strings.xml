@@ -40,4 +40,9 @@
     <string name="delete">Delete</string>
     <string name="download_sensor">Download Sensor</string>
     <string name="ad">Ad</string>
+    <string name="welcome_summary">Blood Pressure Tracker allows you to track your blood pressure, which aids you in keep track of and control your blood pressure everyday.\n\nConsult your doctor or use a blood pressure monitor device to determine blood pressure and enter reading in home page.\n\nThis app provides you insights whether you need to take some steps to improve your numbers or not, you can see charts which show trends and statistics to check your median, max and min trends. You can also view past records in Insight Tab.</string>
+    <string name="disclaimer">Disclaimer:</string>
+    <string name="disclaimer_summary">This is not a medical device, the application only records and monitors your daily blood pressure values and the scan button calculates average BP based on the information entered by the user in the history log. You should use blood pressure monitor to meassure your blood pressure.</string>
+    <string name="welcome">Welcome</string>
+    <string name="okay">Okay</string>
 </resources>
